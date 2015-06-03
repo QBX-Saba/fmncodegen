@@ -26,7 +26,7 @@ public class DataManager {
 	public List<Code> list() throws Exception {
 		List<Code> list = null;
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
-		try {
+		try {  
 			entityManager.getEntityManagerFactory().getCache().evictAll();
 			String query = "Select * from promotion_codes order by created_at DESC";
 			//list = (entityManager.createQuery("FROM Code ORDER BY created_at DESC", Code.class)).getResultList();
