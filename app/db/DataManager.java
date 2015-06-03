@@ -5,13 +5,15 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
 
 import org.h2.tools.Csv;
 
 import dto.Code;
 
 public class DataManager {
-	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("defaultPersistenceUnit");
+	@PersistenceContext
+	private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("defaultPersistenceUnit");
 	private static DataManager instance;
 
 	public static DataManager getInstance() {
