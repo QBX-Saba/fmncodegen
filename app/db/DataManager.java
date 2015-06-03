@@ -28,9 +28,9 @@ public class DataManager {
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		try {
 			entityManager.getEntityManagerFactory().getCache().evictAll();
-
-			list = (entityManager.createQuery("FROM Code ORDER BY created_at DESC", Code.class)).getResultList();
-
+			String query = "Select * from promotion_codes order by created_at DESC";
+			//list = (entityManager.createQuery("FROM Code ORDER BY created_at DESC", Code.class)).getResultList();
+			list = entityManager.createNativeQuery(query, Code.class).getResultList();
 			entityManager.close();
 		} catch (Exception exp) {
 			exp.printStackTrace();
