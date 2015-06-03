@@ -10,19 +10,19 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name="promotion_codes")  
+@Table(name = "promotion_codes")
 public class Code {
 	private Integer id;
 	private String code;
 	private String type;
-	private Boolean isUsed=false;
-	private Boolean isValid=true;
-	private Boolean isAssigned=false;
+	private Boolean isUsed = false;
+	private Boolean isValid = true;
+	private Boolean isAssigned = false;
 	private Integer userId;
 	private String usedBy;
 	private Date createdAt;
+	private Date updatedAt;
 
-	
 	@Id
 	@GeneratedValue
 	public Integer getId() {
@@ -33,7 +33,7 @@ public class Code {
 		this.id = id;
 	}
 
-	@Column(name="code")
+	@Column(name = "code")
 	public String getCode() {
 		return code;
 	}
@@ -42,7 +42,7 @@ public class Code {
 		this.code = code;
 	}
 
-	@Column(name="type")
+	@Column(name = "type")
 	public String getType() {
 		return type;
 	}
@@ -51,7 +51,7 @@ public class Code {
 		this.type = type;
 	}
 
-	@Column(name="is_used")
+	@Column(name = "is_used")
 	public Boolean getIsUsed() {
 		return isUsed;
 	}
@@ -59,9 +59,8 @@ public class Code {
 	public void setIsUsed(Boolean isUsed) {
 		this.isUsed = isUsed;
 	}
-	
-	
-	@Column(name="is_assigned")
+
+	@Column(name = "is_assigned")
 	public Boolean getIsAssigned() {
 		return isAssigned;
 	}
@@ -70,7 +69,7 @@ public class Code {
 		this.isAssigned = isAssigned;
 	}
 
-	@Column(name="is_valid")
+	@Column(name = "is_valid")
 	public Boolean getIsValid() {
 		return isValid;
 	}
@@ -79,7 +78,7 @@ public class Code {
 		this.isValid = isValid;
 	}
 
-	@Column(name="user_id")
+	@Column(name = "user_id")
 	public Integer getUserId() {
 		return userId;
 	}
@@ -97,7 +96,7 @@ public class Code {
 		this.usedBy = usedBy;
 	}
 
-	@Column(name="created_at")
+	@Column(name = "created_at")
 	public Date getCreatedAt() {
 		return createdAt;
 	}
@@ -105,7 +104,14 @@ public class Code {
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
 	}
-	
-	
+
+	@Column(name="updated_at")
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
 
 }
