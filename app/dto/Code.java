@@ -18,6 +18,7 @@ public class Code {
 	private Boolean isUsed = false;
 	private Boolean isValid = true;
 	private Boolean isAssigned = false;
+	private Date validTill;
 	private Integer userId;
 	private String usedBy;
 	private Date createdAt;
@@ -49,6 +50,16 @@ public class Code {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+	
+	
+	@Column(name="valid_till")
+	public Date getValidTill() {
+		return validTill;
+	}
+
+	public void setValidTill(Date validTill) {
+		this.validTill = validTill;
 	}
 
 	@Column(name = "is_used")
