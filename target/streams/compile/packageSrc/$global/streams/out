@@ -1,0 +1,21 @@
+[0m[[0minfo[0m] [0mPackaging C:\Users\abbas\Documents\GitHub\fmncodegen\target\scala-2.11\fmn-pcgen_2.11-1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	controllers\Application.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\app\controllers\Application.java[0m
+[0m[[0mdebug[0m] [0m	dto\Code.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\app\dto\Code.java[0m
+[0m[[0mdebug[0m] [0m	routes[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\conf\routes[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\conf\application.conf[0m
+[0m[[0mdebug[0m] [0m	service\DataService.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\app\service\DataService.java[0m
+[0m[[0mdebug[0m] [0m	db\DataManager.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\app\db\DataManager.java[0m
+[0m[[0mdebug[0m] [0m	META-INF\persistence.xml[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\conf\META-INF\persistence.xml[0m
+[0m[[0mdebug[0m] [0m	logback.xml[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\conf\logback.xml[0m
+[0m[[0mdebug[0m] [0m	META-INF[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\abbas\Documents\GitHub\fmncodegen\conf\META-INF[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

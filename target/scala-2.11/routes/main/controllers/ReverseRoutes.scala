@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/abbas/Documents/GitHub/FMN-CodeGen/fmn-pcgen/conf/routes
-// @DATE:Wed Jun 03 13:58:25 PKT 2015
+// @SOURCE:C:/Users/abbas/Documents/GitHub/fmncodegen/conf/routes
+// @DATE:Wed Jun 03 22:36:36 PKT 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

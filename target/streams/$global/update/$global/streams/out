@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/abbas/Documents/GitHub/FMN-CodeGen/fmn-pcgen/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/abbas/Documents/GitHub/fmncodegen/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75814e33[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a9b70ca[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.1] org.scala-lang#scala-library;2.11.1[0m
@@ -444,7 +444,7 @@
 [0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.google.inject.extensions#guice-assistedinject;4.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m		tried C:\Users\abbas\.ivy2\local\com.google.inject.extensions\guice-assistedinject\4.0\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\repository\com.google.inject.extensions\guice-assistedinject\4.0\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried C:\Users\abbas\Documents\GitHub\fmncodegen\repository\com.google.inject.extensions\guice-assistedinject\4.0\ivys\ivy.xml[0m
 [0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.google.inject.extensions#guice-assistedinject;4.0[0m
 [0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for com.google.inject.extensions#guice-assistedinject;4.0[0m
@@ -453,7 +453,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (924ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.inject.extensions#guice-assistedinject;4.0!guice-assistedinject.pom(pom.original) (1748ms)[0m
 [0m[[0minfo[0m] [0mResolving com.google.inject.extensions#extensions-parent;4.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.inject.extensions#extensions-parent;4.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.inject.extensions#extensions-parent;4.0[0m
@@ -1340,24 +1340,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT->org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\abbas\.ivy2\local\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\repository\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom (1.0.0.Final)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final!hibernate-jpa-2.1-api.pom(pom.original) (1237ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\abbas\.ivy2\local\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\jars\hibernate-jpa-2.1-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\repository\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\jars\hibernate-jpa-2.1-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar[0m
-[0m[[0mdebug[0m] [0m	found org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final[0m
+[0m[[0mdebug[0m] [0m	found org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT->org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT->org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT->org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final [compile->master][0m
@@ -8155,12 +8139,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.4.0!play-java-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.28!mysql-connector-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-entitymanager;3.6.9.Final!hibernate-entitymanager.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final!hibernate-jpa-2.1-api.jar (1514ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate.javax.persistence#hibernate-jpa-2.1-api;1.0.0.Final!hibernate-jpa-2.1-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.velocity#velocity;1.7!velocity.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
@@ -8294,21 +8273,21 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.1!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.11!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7805ms :: artifacts dl 1733ms[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT compile produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT runtime produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT test produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT provided produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT optional produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT compile-internal produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT runtime-internal produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT test-internal produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT plugin produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT sources produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT docs produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT pom produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT scala-tool produced in C:\Users\abbas\Documents\GitHub\FMN-CodeGen\fmn-pcgen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (7805ms resolve - 1733ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 11287ms :: artifacts dl 599ms[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT compile produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT runtime produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT test produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT provided produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT optional produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT compile-internal produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT runtime-internal produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT test-internal produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT plugin produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT sources produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT docs produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT pom produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for fmn-pcgen#fmn-pcgen_2.11;1.0-SNAPSHOT scala-tool produced in C:\Users\abbas\Documents\GitHub\fmncodegen\target\resolution-cache\reports\fmn-pcgen-fmn-pcgen_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (11287ms resolve - 599ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
 [0m[[33mwarn[0m] [0mScala version was updated by one of library dependencies:[0m
 [0m[[33mwarn[0m] [0m	* org.scala-lang:scala-library:(2.11.1, 2.11.5, 2.11.0) -> 2.11.6[0m
