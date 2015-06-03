@@ -1,0 +1,102 @@
+@(codes: List[dto.Code], gencode:String)
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>FMN Promo Code Gen</title>
+
+</head>
+<body
+	style="padding-right: 15px; padding-left: 100px; margin-right: auto; margin-left: auto; font-family:"HelveticaNeue", Helvetica, Arial, sans-serif;">
+	@helper.form(action=routes.Application.generate()){
+	<div class="page-header background-color: #0480be">
+		<p style="font-size: 140%; color: #60605E;">
+			<b> FMN <small> Promo Codes</small></b>
+		</p>
+	</div>
+	@if(request.cookies.get("message") != null) {
+	<div>
+		<p style="font-size: 120%; color: gray;">@request.cookies.get("message").value</p>
+	</div>
+	}
+	<table
+		style="background-color: transparent; text-align: left; width: 60%; max-width: 100%; margin-bottom: 20px; padding: 5px; line-height: 1.3; vertical-align: top; border-top: 1px; vertical-align: bottom; border-bottom: 1px solid #ddd;">
+
+		<tr>
+			<td>
+
+				<div>
+					<table>
+						<tr>
+							<td><label>Full Discount:</label> <input type="radio" name="type" value="fulldiscount"
+								class="cb" /></td>
+							<td><label>75% Dicount:</label> <input type="radio" name="type" value="discount75"
+								class="cb" /></td>
+
+							</label>
+							</td>
+						</tr>
+						<tr>
+							<td><button>Generate Code</button></td>
+						</tr>
+						
+					</table>
+
+
+
+
+				</div>
+			</td>
+
+		</tr>
+		
+	</table>
+	@gencode
+
+	<div>
+
+		<table
+			style="background-color: transparent; text-align: left; width: 60%; max-width: 60%; margin-bottom: 20px; padding: 0px; line-height: 1.3; vertical-align: top; border-top: 1px; vertical-align: bottom; border-bottom: 2px solid #ddd; border-top: 2px solid #ddd;">
+
+
+			<tr>
+				<th></th>
+				<th>Code</th>
+				<th>Type</th>
+				<th>Used</th>
+				<th>Assigned</th>
+				<th>Used By</th>
+
+			</tr>
+
+			@for(code <- codes) {
+			@if(code.getIsUsed()){
+			<tr bgcolor="#EBEBE0">
+			}else{
+			<tr>
+			}
+				@if(code.getIsAssigned()){
+				<td><input type="checkbox" name="assigned" value=@code.getCode() disabled="disabled"></td>
+				}else{
+				<td><input type="checkbox" name="assigned" value=@code.getCode()></td> }
+				<td>@code.getCode()</td>
+				<td>@code.getType()</td>
+				<td>@code.getIsUsed()</td>
+				<td>@code.getIsAssigned()</td>
+				<td>@code.getUsedBy()</td>
+
+
+			</tr>
+			}
+
+			<tr>
+				<td><input type="submit" value="Assign" /></td>
+			</tr>
+		</table>
+
+
+	</div>
+	}
+</body>
+</html>
