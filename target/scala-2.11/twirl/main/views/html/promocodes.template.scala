@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class promocodes extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[dto.Code],String,play.twirl.api.HtmlFormat.Appendable] {
+class promocodes extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[List[dto.Code],String,String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(codes: List[dto.Code], gencode:String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(codes: List[dto.Code], gencode:String, msg:String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.41*/("""
+Seq[Any](format.raw/*1.53*/("""
 
 """),format.raw/*3.1*/("""<!DOCTYPE html>
 
@@ -135,9 +135,9 @@ Seq[Any](format.raw/*1.41*/("""
     }
   }
 
-  def render(codes:List[dto.Code],gencode:String): play.twirl.api.HtmlFormat.Appendable = apply(codes,gencode)
+  def render(codes:List[dto.Code],gencode:String,msg:String): play.twirl.api.HtmlFormat.Appendable = apply(codes,gencode,msg)
 
-  def f:((List[dto.Code],String) => play.twirl.api.HtmlFormat.Appendable) = (codes,gencode) => apply(codes,gencode)
+  def f:((List[dto.Code],String,String) => play.twirl.api.HtmlFormat.Appendable) = (codes,gencode,msg) => apply(codes,gencode,msg)
 
   def ref: this.type = this
 
@@ -150,10 +150,10 @@ Seq[Any](format.raw/*1.41*/("""
 object promocodes extends promocodes_Scope0.promocodes
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 03 23:00:10 PKT 2015
+                  DATE: Thu Jun 04 10:49:39 PKT 2015
                   SOURCE: C:/Users/abbas/Documents/GitHub/fmncodegen/app/views/promocodes.scala.html
-                  HASH: 65d03f7ef99788c7b214629992b21bce2d53d919
-                  MATRIX: 770->1|904->40|934->44|1201->285|1215->291|1267->334|1306->335|1336->338|1526->502|1577->544|1617->546|1647->549|1725->600|1741->607|1791->636|1838->653|1868->656|2638->1400|2666->1407|2698->1412|3155->1843|3189->1861|3229->1863|3261->1869|3290->1889|3329->1890|3361->1895|3407->1923|3419->1927|3458->1928|3490->1933|3530->1943|3563->1950|3596->1974|3635->1975|3668->1981|3745->2031|3758->2035|3789->2045|3818->2046|3868->2078|3881->2082|3920->2083|3953->2089|4030->2139|4043->2143|4074->2153|4113->2161|4146->2167|4178->2172|4191->2176|4222->2186|4265->2202|4278->2206|4309->2216|4352->2232|4365->2236|4398->2248|4441->2264|4454->2268|4491->2284|4534->2300|4547->2304|4580->2316|4635->2341|4669->2348|4796->2444|4826->2446
+                  HASH: d30871fd858becf88d89e2e2ca3e0148512fec03
+                  MATRIX: 777->1|923->52|953->56|1220->297|1234->303|1286->346|1325->347|1355->350|1545->514|1596->556|1636->558|1666->561|1744->612|1760->619|1810->648|1857->665|1887->668|2657->1412|2685->1419|2717->1424|3174->1855|3208->1873|3248->1875|3280->1881|3309->1901|3348->1902|3380->1907|3426->1935|3438->1939|3477->1940|3509->1945|3549->1955|3582->1962|3615->1986|3654->1987|3687->1993|3764->2043|3777->2047|3808->2057|3837->2058|3887->2090|3900->2094|3939->2095|3972->2101|4049->2151|4062->2155|4093->2165|4132->2173|4165->2179|4197->2184|4210->2188|4241->2198|4284->2214|4297->2218|4328->2228|4371->2244|4384->2248|4417->2260|4460->2276|4473->2280|4510->2296|4553->2312|4566->2316|4599->2328|4654->2353|4688->2360|4815->2456|4845->2458
                   LINES: 27->1|32->1|34->3|43->12|43->12|43->12|43->12|44->13|49->18|49->18|49->18|50->19|51->20|51->20|51->20|53->22|54->23|86->55|86->55|88->57|104->73|104->73|104->73|105->74|105->74|105->74|106->75|107->76|107->76|107->76|108->77|109->78|110->79|110->79|110->79|111->80|111->80|111->80|111->80|111->80|112->81|112->81|112->81|113->82|113->82|113->82|113->82|113->82|114->83|114->83|114->83|114->83|115->84|115->84|115->84|116->85|116->85|116->85|117->86|117->86|117->86|118->87|118->87|118->87|122->91|124->93|131->100|132->101
                   -- GENERATED --
               */

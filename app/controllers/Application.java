@@ -32,6 +32,7 @@ public class Application extends Controller {
 				dataService.assignCodes(assigned);
 			} else {
 				response().setCookie("message", "Choose a Type");
+				return redirect("/codes");
 			}
 		}
 
@@ -49,7 +50,7 @@ public class Application extends Controller {
 	@Transactional
 	public static Result codes() {
 		try {
-			response().setCookie("message", "");
+			
 			String generatedCode = request().getQueryString("gencode");
 			List<Code> codes = dataService.listCodes();
 			return ok(promocodes.render(codes, generatedCode));
