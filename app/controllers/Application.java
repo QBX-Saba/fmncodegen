@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.List;
+import play.db.jpa.*;
 import java.util.Map;
 
 import dto.Code;
@@ -16,6 +17,7 @@ public class Application extends Controller {
 		return ok("");
 	}
 
+	@Transactional
 	public static Result generate() {
 		response().setCookie("message", "");
 		String type = request().getQueryString("type");
@@ -44,6 +46,7 @@ public class Application extends Controller {
 		return ok();
 	}
 
+	@Transactional
 	public static Result codes() {
 		try {
 			response().setCookie("message", "");

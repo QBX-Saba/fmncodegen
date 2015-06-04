@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/abbas/Documents/GitHub/fmncodegen/conf/routes
-// @DATE:Wed Jun 03 22:36:36 PKT 2015
+// @DATE:Wed Jun 03 23:00:09 PKT 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
