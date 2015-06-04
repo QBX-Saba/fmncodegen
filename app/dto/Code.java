@@ -2,10 +2,15 @@ package dto;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -19,8 +24,7 @@ public class Code {
 	private Boolean isValid = true;
 	private Boolean isAssigned = false;
 	private Date validTill;
-	private Integer userId;
-	private String usedBy;
+	private User user=new User();
 	private Date createdAt;
 	private Date updatedAt;
 
@@ -51,9 +55,8 @@ public class Code {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
-	
-	@Column(name="valid_till")
+
+	@Column(name = "valid_till")
 	public Date getValidTill() {
 		return validTill;
 	}
@@ -89,22 +92,14 @@ public class Code {
 		this.isValid = isValid;
 	}
 
-	@Column(name = "user_id")
-	public Integer getUserId() {
-		return userId;
+	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+	@JoinColumn(name = "user_id", referencedColumnName = "client_id")
+	public User getUser() {
+		return user;
 	}
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
-
-	@Transient
-	public String getUsedBy() {
-		return usedBy;
-	}
-
-	public void setUsedBy(String usedBy) {
-		this.usedBy = usedBy;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Column(name = "created_at")
@@ -116,7 +111,7 @@ public class Code {
 		this.createdAt = createdAt;
 	}
 
-	@Column(name="updated_at")
+	@Column(name = "updated_at")
 	public Date getUpdatedAt() {
 		return updatedAt;
 	}

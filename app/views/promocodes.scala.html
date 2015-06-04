@@ -80,8 +80,11 @@
 				<td>@code.getType()</td>
 				<td>@code.getIsUsed()</td>
 				<td>@code.getIsAssigned()</td>
-				<td>@code.getUsedBy()</td>
-
+				@if(code.getUser() != null){
+				<td>@code.getUser().getEmail()</td>
+				}else{
+				<td>none</td>
+				}
 
 			</tr>
 			}
