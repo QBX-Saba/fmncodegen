@@ -31,7 +31,7 @@ public class Application extends Controller {
 			if (assigned != null) {
 				dataService.assignCodes(assigned);
 			} else {
-				response().setCookie("message", "Choose a Type");
+				response().setCookie("message", "Error");
 				return redirect("/codes");
 			}
 		}

@@ -4,7 +4,7 @@
 		module="fmn-pcgen_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150603223636"
+		publication="20150604102648"
 	>
 		<description>
 		fmn-pcgen
@@ -34,8 +34,9 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.1" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.1" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.1.1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-enhancer" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ebean_2.11" rev="1.0.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-server_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.4.0" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-omnidoc_2.11" rev="2.4.0" conf="docs->default(compile)"/>
@@ -45,8 +46,8 @@
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.28" conf="compile->default(compile)"/>
-		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.6.9.Final" conf="compile->default(compile)"/>
-		<dependency org="org.hibernate.javax.persistence" name="hibernate-jpa-2.1-api" rev="1.0.0.Final" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-java-jpa_2.11" rev="2.4.0" conf="compile->default(compile)"/>
+		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="4.3.9.Final" conf="compile->default(compile)"/>
 		<dependency org="org.apache.velocity" name="velocity" rev="1.7" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
