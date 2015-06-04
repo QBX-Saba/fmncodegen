@@ -8,6 +8,7 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<non-jta-data-source>DefaultDS</non-jta-data-source>
 		  <class>dto.Code</class>
+		  <class>dto.User</class>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"></property>
 			<property name="hibernate.hbm2ddl.auto" value="none"></property>			

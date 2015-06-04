@@ -93,7 +93,7 @@ public class Code {
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id", referencedColumnName = "client_id")
+	@JoinColumn(name = "user_id", referencedColumnName = "client_id", updatable=false)
 	public User getUser() {
 		return user;
 	}
