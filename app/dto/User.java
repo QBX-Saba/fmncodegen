@@ -13,11 +13,15 @@ import javax.persistence.Table;
 public class User {
 	private Integer clientId;
 	private String name;
-	private String email="none";
+	private String email;
+
+	public User() {
+		email= "none";
+	}
 
 	@Id
 	@GeneratedValue
-	@Column(name="client_id")
+	@Column(name = "client_id")
 	public Integer getClientId() {
 		return clientId;
 	}
@@ -26,7 +30,7 @@ public class User {
 		this.clientId = clientId;
 	}
 
-	@Column(name="name")
+	@Column(name = "name")
 	public String getName() {
 		return name;
 	}
@@ -35,7 +39,7 @@ public class User {
 		this.name = name;
 	}
 
-	@Column(name="email")
+	@Column(name = "email")
 	public String getEmail() {
 		return email;
 	}
