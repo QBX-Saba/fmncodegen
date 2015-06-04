@@ -14,6 +14,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import org.hibernate.annotations.Immutable;
+
 @Entity
 @Table(name = "promotion_codes")
 public class Code {
@@ -92,8 +94,9 @@ public class Code {
 		this.isValid = isValid;
 	}
 
+	@Immutable
 	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id", referencedColumnName = "client_id", updatable=false)
+	@JoinColumn(name = "user_id", referencedColumnName = "client_id", updatable=false, insertable=false)
 	public User getUser() {
 		return user;
 	}
