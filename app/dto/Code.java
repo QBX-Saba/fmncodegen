@@ -10,9 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 
 import org.hibernate.annotations.Immutable;
 
@@ -26,7 +24,7 @@ public class Code {
 	private Boolean isValid = true;
 	private Boolean isAssigned = false;
 	private Date validTill;
-	private User user=new User();
+	private User user;
 	private Date createdAt;
 	private Date updatedAt;
 
